@@ -3,7 +3,9 @@ import Queue
 from html_parser import *
 
 class TaskController(object):
-
+    
+    __metaclass__ = Singleton
+    
     def __init__(self):
         super(TaskController, self).__init__()
         self.queue = Queue.Queue()
@@ -32,7 +34,7 @@ class TaskController(object):
 
 class Task(threading.Thread):
 
-    def __init__(self, arg, job = None):
+    def __init__(self, job, arg = None):
         super (Task, self).__init__()
         threading.Thread.__init__(self)
         self.execute = job

@@ -1,16 +1,16 @@
 from singleton import Singleton
 
-class StockDataModel(object):
 
+class StockDataModel(object):
     __metaclass__ = Singleton
 
     def __init__(self):
         super(StockDataModel, self).__init__()
         self.data_list = []
 
-    def add_data(self, stock, is_multiple = False, idx = 0 ):
+    def add_data(self, stock, is_multiple=False, idx=0):
 
-        if is_multiple == True:
+        if is_multiple is True:
             self.data_list.extend(stock)
         else:
             self.data_list.append(stock)

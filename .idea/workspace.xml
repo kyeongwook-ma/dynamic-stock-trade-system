@@ -1,592 +1,654 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ChangeListManager">
-    <list default="true" readonly="true" id="42d490e3-759c-4b29-9b39-cbac3f2ad7bf" name="Default" comment="" />
-    <ignored path="dynamic-stock-trade-system.iws" />
-    <ignored path=".idea/workspace.xml" />
-    <option name="TRACKING_ENABLED" value="true" />
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
-  <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
-  </component>
-  <component name="DaemonCodeAnalyzer">
-    <disable_hints />
-  </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
-  <component name="FavoritesManager">
-    <favorites_list name="dynamic-stock-trade-system" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="main_controller.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main_controller.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="552">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RawData.csv" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RawData.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="19" selection-start="391" selection-end="391" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5842">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="singleton.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/singleton.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="datamodel.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/datamodel.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="34" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0" vertical-offset="83" max-vertical-offset="874">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="task.py" pinned="false" current="false" current-in-tab="false">
+    <component name="ChangeListManager">
+        <list default="true" readonly="true" id="42d490e3-759c-4b29-9b39-cbac3f2ad7bf" name="Default" comment=""/>
+        <ignored path="dynamic-stock-trade-system.iws"/>
+        <ignored path=".idea/workspace.xml"/>
+        <option name="TRACKING_ENABLED" value="true"/>
+        <option name="SHOW_DIALOG" value="false"/>
+        <option name="HIGHLIGHT_CONFLICTS" value="true"/>
+        <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false"/>
+        <option name="LAST_RESOLUTION" value="IGNORE"/>
+    </component>
+    <component name="ChangesViewManager" flattened_view="true" show_ignored="false"/>
+    <component name="CreatePatchCommitExecutor">
+        <option name="PATCH_PATH" value=""/>
+    </component>
+    <component name="DaemonCodeAnalyzer">
+        <disable_hints/>
+    </component>
+    <component name="ExecutionTargetManager" SELECTED_TARGET="default_target"/>
+    <component name="FavoritesManager">
+        <favorites_list name="dynamic-stock-trade-system"/>
+    </component>
+    <component name="FileEditorManager">
+        <leaf>
+            <file leaf-file-name="main_controller.py" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/main_controller.py">
+                    <provider selected="true" editor-type-id="text-editor">
+                        <state line="14" column="0" selection-start="383" selection-end="383"
+                               vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="552">
+                            <folding/>
+                        </state>
+                    </provider>
+                </entry>
+            </file>
+            <file leaf-file-name="RawData.csv" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/RawData.csv">
+                    <provider selected="true" editor-type-id="text-editor">
+                        <state line="8" column="19" selection-start="391" selection-end="391"
+                               vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5842">
+                            <folding/>
+                        </state>
+                    </provider>
+                </entry>
+            </file>
+            <file leaf-file-name="singleton.py" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/singleton.py">
+                    <provider selected="true" editor-type-id="text-editor">
+                        <state line="9" column="0" selection-start="228" selection-end="228"
+                               vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+                            <folding/>
+                        </state>
+                    </provider>
+                </entry>
+            </file>
+            <file leaf-file-name="datamodel.py" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/datamodel.py">
+                    <provider selected="true" editor-type-id="text-editor">
+                        <state line="20" column="34" selection-start="516" selection-end="516"
+                               vertical-scroll-proportion="0.0" vertical-offset="83" max-vertical-offset="874">
+                            <folding/>
+                        </state>
+                    </provider>
+                </entry>
+            </file>
+            <file leaf-file-name="task.py" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/task.py">
+                    <provider selected="true" editor-type-id="text-editor">
+                        <state line="26" column="0" selection-start="668" selection-end="668"
+                               vertical-scroll-proportion="0.0" vertical-offset="248" max-vertical-offset="1173">
+                            <folding/>
+                        </state>
+                    </provider>
+                </entry>
+            </file>
+            <file leaf-file-name="pairs_trading_algorithm.py" pinned="false" current="true" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/pairs_trading_algorithm.py">
+                    <provider selected="true" editor-type-id="text-editor">
+                        <state line="19" column="23" selection-start="357" selection-end="357"
+                               vertical-scroll-proportion="0.14770459" vertical-offset="363" max-vertical-offset="2116">
+                            <folding>
+                                <element signature="e#0#9#0" expanded="true"/>
+                            </folding>
+                        </state>
+                    </provider>
+                </entry>
+            </file>
+            <file leaf-file-name="pairs_trading_code(ver_python).py" pinned="false" current="false"
+                  current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/pairs_trading_code(ver_python).py">
+                    <provider selected="true" editor-type-id="text-editor">
+                        <state line="0" column="0" selection-start="0" selection-end="0"
+                               vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2116">
+                            <folding>
+                                <element signature="e#0#9#0" expanded="true"/>
+                            </folding>
+                        </state>
+                    </provider>
+                </entry>
+            </file>
+            <file leaf-file-name="html_parser.py" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/html_parser.py">
+                    <provider selected="true" editor-type-id="text-editor">
+                        <state line="11" column="43" selection-start="368" selection-end="368"
+                               vertical-scroll-proportion="0.0" vertical-offset="63" max-vertical-offset="713">
+                            <folding/>
+                        </state>
+                    </provider>
+                </entry>
+            </file>
+        </leaf>
+    </component>
+    <component name="FindManager">
+        <FindUsagesManager>
+            <setting name="OPEN_NEW_TAB" value="false"/>
+        </FindUsagesManager>
+    </component>
+    <component name="IdeDocumentHistory">
+        <option name="changedFiles">
+            <list>
+                <option value="$PROJECT_DIR$/singleton.py"/>
+                <option value="$PROJECT_DIR$/html_parser.py"/>
+                <option value="$PROJECT_DIR$/main_controller.py"/>
+                <option value="$PROJECT_DIR$/task.py"/>
+                <option value="$PROJECT_DIR$/datamodel.py"/>
+            </list>
+        </option>
+    </component>
+    <component name="ProjectFrameBounds">
+        <option name="x" value="-1"/>
+        <option name="width" value="1922"/>
+        <option name="height" value="1080"/>
+    </component>
+    <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+        <OptionsSetting value="true" id="Add"/>
+        <OptionsSetting value="true" id="Remove"/>
+        <OptionsSetting value="true" id="Checkout"/>
+        <OptionsSetting value="true" id="Update"/>
+        <OptionsSetting value="true" id="Status"/>
+        <OptionsSetting value="true" id="Edit"/>
+        <ConfirmationsSetting value="2" id="Add"/>
+        <ConfirmationsSetting value="0" id="Remove"/>
+    </component>
+    <component name="ProjectReloadState">
+        <option name="STATE" value="0"/>
+    </component>
+    <component name="ProjectView">
+        <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+            <flattenPackages/>
+            <showMembers/>
+            <showModules/>
+            <showLibraryContents/>
+            <hideEmptyPackages/>
+            <abbreviatePackageNames/>
+            <autoscrollToSource/>
+            <autoscrollFromSource/>
+            <sortByType/>
+        </navigator>
+        <panes>
+            <pane id="ProjectPane">
+                <subPane>
+                    <PATH>
+                        <PATH_ELEMENT>
+                            <option name="myItemId" value="dynamic-stock-trade-system"/>
+                            <option name="myItemType"
+                                    value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode"/>
+                        </PATH_ELEMENT>
+                    </PATH>
+                    <PATH>
+                        <PATH_ELEMENT>
+                            <option name="myItemId" value="dynamic-stock-trade-system"/>
+                            <option name="myItemType"
+                                    value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode"/>
+                        </PATH_ELEMENT>
+                        <PATH_ELEMENT>
+                            <option name="myItemId" value="dynamic-stock-trade-system"/>
+                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode"/>
+                        </PATH_ELEMENT>
+                    </PATH>
+                </subPane>
+            </pane>
+            <pane id="Scope"/>
+        </panes>
+    </component>
+    <component name="PropertiesComponent">
+        <property name="options.splitter.main.proportions" value="0.3"/>
+        <property name="recentsLimit" value="5"/>
+        <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable"/>
+        <property name="FullScreen" value="false"/>
+        <property name="options.searchVisible" value="true"/>
+        <property name="options.splitter.details.proportions" value="0.2"/>
+    </component>
+    <component name="PyConsoleOptionsProvider">
+        <option name="myPythonConsoleState">
+            <console-settings/>
+        </option>
+    </component>
+    <component name="RunManager" selected="Python.main_controller">
+        <configuration default="false" name="task" type="PythonConfigurationType" factoryName="Python" temporary="true">
+            <option name="INTERPRETER_OPTIONS" value=""/>
+            <option name="PARENT_ENVS" value="true"/>
+            <envs>
+                <env name="PYTHONUNBUFFERED" value="1"/>
+            </envs>
+            <option name="SDK_HOME" value=""/>
+            <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$"/>
+            <option name="IS_MODULE_SDK" value="true"/>
+            <option name="ADD_CONTENT_ROOTS" value="true"/>
+            <option name="ADD_SOURCE_ROOTS" value="true"/>
+            <module name="dynamic-stock-trade-system"/>
+            <option name="SCRIPT_NAME" value="$PROJECT_DIR$/task.py"/>
+            <option name="PARAMETERS" value=""/>
+            <RunnerSettings RunnerId="PythonRunner"/>
+            <ConfigurationWrapper RunnerId="PythonRunner"/>
+            <method/>
+        </configuration>
+        <configuration default="false" name="main_controller" type="PythonConfigurationType" factoryName="Python"
+                       temporary="true">
+            <option name="INTERPRETER_OPTIONS" value=""/>
+            <option name="PARENT_ENVS" value="true"/>
+            <envs>
+                <env name="PYTHONUNBUFFERED" value="1"/>
+            </envs>
+            <option name="SDK_HOME" value=""/>
+            <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$"/>
+            <option name="IS_MODULE_SDK" value="true"/>
+            <option name="ADD_CONTENT_ROOTS" value="true"/>
+            <option name="ADD_SOURCE_ROOTS" value="true"/>
+            <module name="dynamic-stock-trade-system"/>
+            <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main_controller.py"/>
+            <option name="PARAMETERS" value=""/>
+            <RunnerSettings RunnerId="PyDebugRunner"/>
+            <RunnerSettings RunnerId="PythonRunner"/>
+            <ConfigurationWrapper RunnerId="PyDebugRunner"/>
+            <ConfigurationWrapper RunnerId="PythonRunner"/>
+            <method/>
+        </configuration>
+        <configuration default="false" name="html_parser" type="PythonConfigurationType" factoryName="Python"
+                       temporary="true">
+            <option name="INTERPRETER_OPTIONS" value=""/>
+            <option name="PARENT_ENVS" value="true"/>
+            <envs>
+                <env name="PYTHONUNBUFFERED" value="1"/>
+            </envs>
+            <option name="SDK_HOME" value=""/>
+            <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$"/>
+            <option name="IS_MODULE_SDK" value="true"/>
+            <option name="ADD_CONTENT_ROOTS" value="true"/>
+            <option name="ADD_SOURCE_ROOTS" value="true"/>
+            <module name="dynamic-stock-trade-system"/>
+            <option name="SCRIPT_NAME" value="$PROJECT_DIR$/html_parser.py"/>
+            <option name="PARAMETERS" value=""/>
+            <RunnerSettings RunnerId="PythonRunner"/>
+            <ConfigurationWrapper RunnerId="PythonRunner"/>
+            <method/>
+        </configuration>
+        <configuration default="true" type="tests" factoryName="py.test">
+            <option name="INTERPRETER_OPTIONS" value=""/>
+            <option name="PARENT_ENVS" value="true"/>
+            <envs/>
+            <option name="SDK_HOME" value=""/>
+            <option name="WORKING_DIRECTORY" value=""/>
+            <option name="IS_MODULE_SDK" value="false"/>
+            <option name="ADD_CONTENT_ROOTS" value="true"/>
+            <option name="ADD_SOURCE_ROOTS" value="true"/>
+            <module name="dynamic-stock-trade-system"/>
+            <option name="SCRIPT_NAME" value=""/>
+            <option name="CLASS_NAME" value=""/>
+            <option name="METHOD_NAME" value=""/>
+            <option name="FOLDER_NAME" value=""/>
+            <option name="TEST_TYPE" value="TEST_SCRIPT"/>
+            <option name="PATTERN" value=""/>
+            <option name="USE_PATTERN" value="false"/>
+            <option name="testToRun" value=""/>
+            <option name="keywords" value=""/>
+            <option name="params" value=""/>
+            <option name="USE_PARAM" value="false"/>
+            <option name="USE_KEYWORD" value="false"/>
+            <method/>
+        </configuration>
+        <configuration default="true" type="tests" factoryName="Nosetests">
+            <option name="INTERPRETER_OPTIONS" value=""/>
+            <option name="PARENT_ENVS" value="true"/>
+            <envs/>
+            <option name="SDK_HOME" value=""/>
+            <option name="WORKING_DIRECTORY" value=""/>
+            <option name="IS_MODULE_SDK" value="false"/>
+            <option name="ADD_CONTENT_ROOTS" value="true"/>
+            <option name="ADD_SOURCE_ROOTS" value="true"/>
+            <module name="dynamic-stock-trade-system"/>
+            <option name="SCRIPT_NAME" value=""/>
+            <option name="CLASS_NAME" value=""/>
+            <option name="METHOD_NAME" value=""/>
+            <option name="FOLDER_NAME" value=""/>
+            <option name="TEST_TYPE" value="TEST_SCRIPT"/>
+            <option name="PATTERN" value=""/>
+            <option name="USE_PATTERN" value="false"/>
+            <option name="PARAMS" value=""/>
+            <option name="USE_PARAM" value="false"/>
+            <method/>
+        </configuration>
+        <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+            <option name="INTERPRETER_OPTIONS" value=""/>
+            <option name="PARENT_ENVS" value="true"/>
+            <envs>
+                <env name="PYTHONUNBUFFERED" value="1"/>
+            </envs>
+            <option name="SDK_HOME" value=""/>
+            <option name="WORKING_DIRECTORY" value=""/>
+            <option name="IS_MODULE_SDK" value="false"/>
+            <option name="ADD_CONTENT_ROOTS" value="true"/>
+            <option name="ADD_SOURCE_ROOTS" value="true"/>
+            <module name="dynamic-stock-trade-system"/>
+            <option name="SCRIPT_NAME" value=""/>
+            <option name="PARAMETERS" value=""/>
+            <method/>
+        </configuration>
+        <configuration default="true" type="tests" factoryName="Unittests">
+            <option name="INTERPRETER_OPTIONS" value=""/>
+            <option name="PARENT_ENVS" value="true"/>
+            <envs/>
+            <option name="SDK_HOME" value=""/>
+            <option name="WORKING_DIRECTORY" value=""/>
+            <option name="IS_MODULE_SDK" value="false"/>
+            <option name="ADD_CONTENT_ROOTS" value="true"/>
+            <option name="ADD_SOURCE_ROOTS" value="true"/>
+            <module name="dynamic-stock-trade-system"/>
+            <option name="SCRIPT_NAME" value=""/>
+            <option name="CLASS_NAME" value=""/>
+            <option name="METHOD_NAME" value=""/>
+            <option name="FOLDER_NAME" value=""/>
+            <option name="TEST_TYPE" value="TEST_SCRIPT"/>
+            <option name="PATTERN" value=""/>
+            <option name="USE_PATTERN" value="false"/>
+            <option name="PUREUNITTEST" value="true"/>
+            <option name="PARAMS" value=""/>
+            <option name="USE_PARAM" value="false"/>
+            <method/>
+        </configuration>
+        <configuration default="true" type="tests" factoryName="Doctests">
+            <option name="INTERPRETER_OPTIONS" value=""/>
+            <option name="PARENT_ENVS" value="true"/>
+            <envs/>
+            <option name="SDK_HOME" value=""/>
+            <option name="WORKING_DIRECTORY" value=""/>
+            <option name="IS_MODULE_SDK" value="false"/>
+            <option name="ADD_CONTENT_ROOTS" value="true"/>
+            <option name="ADD_SOURCE_ROOTS" value="true"/>
+            <module name="dynamic-stock-trade-system"/>
+            <option name="SCRIPT_NAME" value=""/>
+            <option name="CLASS_NAME" value=""/>
+            <option name="METHOD_NAME" value=""/>
+            <option name="FOLDER_NAME" value=""/>
+            <option name="TEST_TYPE" value="TEST_SCRIPT"/>
+            <option name="PATTERN" value=""/>
+            <option name="USE_PATTERN" value="false"/>
+            <method/>
+        </configuration>
+        <configuration default="true" type="tests" factoryName="Attests">
+            <option name="INTERPRETER_OPTIONS" value=""/>
+            <option name="PARENT_ENVS" value="true"/>
+            <envs/>
+            <option name="SDK_HOME" value=""/>
+            <option name="WORKING_DIRECTORY" value=""/>
+            <option name="IS_MODULE_SDK" value="false"/>
+            <option name="ADD_CONTENT_ROOTS" value="true"/>
+            <option name="ADD_SOURCE_ROOTS" value="true"/>
+            <module name="dynamic-stock-trade-system"/>
+            <option name="SCRIPT_NAME" value=""/>
+            <option name="CLASS_NAME" value=""/>
+            <option name="METHOD_NAME" value=""/>
+            <option name="FOLDER_NAME" value=""/>
+            <option name="TEST_TYPE" value="TEST_SCRIPT"/>
+            <option name="PATTERN" value=""/>
+            <option name="USE_PATTERN" value="false"/>
+            <method/>
+        </configuration>
+        <list size="3">
+            <item index="0" class="java.lang.String" itemvalue="Python.task"/>
+            <item index="1" class="java.lang.String" itemvalue="Python.main_controller"/>
+            <item index="2" class="java.lang.String" itemvalue="Python.html_parser"/>
+        </list>
+        <recent_temporary>
+            <list size="3">
+                <item index="0" class="java.lang.String" itemvalue="Python.main_controller"/>
+                <item index="1" class="java.lang.String" itemvalue="Python.task"/>
+                <item index="2" class="java.lang.String" itemvalue="Python.html_parser"/>
+            </list>
+        </recent_temporary>
+    </component>
+    <component name="ShelveChangesManager" show_recycled="false"/>
+    <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing"
+               myAutoUpdateAfterCommit="false" cleanupOnStartRun="true" SSL_PROTOCOLS="all">
+        <option name="USER" value=""/>
+        <option name="PASSWORD" value=""/>
+        <option name="mySSHConnectionTimeout" value="30000"/>
+        <option name="mySSHReadTimeout" value="30000"/>
+        <option name="LAST_MERGED_REVISION"/>
+        <option name="MERGE_DRY_RUN" value="false"/>
+        <option name="MERGE_DIFF_USE_ANCESTRY" value="true"/>
+        <option name="UPDATE_LOCK_ON_DEMAND" value="false"/>
+        <option name="IGNORE_SPACES_IN_MERGE" value="false"/>
+        <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false"/>
+        <option name="IGNORE_SPACES_IN_ANNOTATE" value="true"/>
+        <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true"/>
+        <option name="FORCE_UPDATE" value="false"/>
+        <option name="IGNORE_EXTERNALS" value="false"/>
+        <configuration useDefault="false">$USER_HOME$/.subversion</configuration>
+        <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+        <supportedVersion>125</supportedVersion>
+    </component>
+    <component name="SvnFileUrlMappingImpl">
+        <option name="myMappingRoots">
+            <list>
+                <SvnCopyRootSimple>
+                    <option name="myVcsRoot" value="$PROJECT_DIR$"/>
+                    <option name="myCopyRoot" value="$PROJECT_DIR$"/>
+                </SvnCopyRootSimple>
+            </list>
+        </option>
+        <option name="myMoreRealMappingRoots">
+            <list>
+                <SvnCopyRootSimple>
+                    <option name="myVcsRoot" value="$PROJECT_DIR$"/>
+                    <option name="myCopyRoot" value="$PROJECT_DIR$"/>
+                </SvnCopyRootSimple>
+            </list>
+        </option>
+    </component>
+    <component name="TaskManager">
+        <task active="true" id="Default" summary="Default task">
+            <changelist id="42d490e3-759c-4b29-9b39-cbac3f2ad7bf" name="Default" comment=""/>
+            <created>1389590531734</created>
+            <updated>1389590531734</updated>
+        </task>
+        <servers/>
+    </component>
+    <component name="ToolWindowManager">
+        <frame x="-1" y="0" width="1922" height="1080" extended-state="6"/>
+        <editor active="true"/>
+        <layout>
+            <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED"
+                         type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false"
+                         content_ui="tabs"/>
+            <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED"
+                         type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false"
+                         content_ui="tabs"/>
+            <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED"
+                         visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs"/>
+            <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED"
+                         type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false"
+                         content_ui="tabs"/>
+            <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED"
+                         type="DOCKED" visible="true" weight="0.14635417" sideWeight="0.5555556" order="0"
+                         side_tool="false" content_ui="combo"/>
+            <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED"
+                         type="DOCKED" visible="false" weight="0.28825995" sideWeight="0.5" order="3" side_tool="false"
+                         content_ui="tabs"/>
+            <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED"
+                         type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true"
+                         content_ui="tabs"/>
+            <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED"
+                         type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true"
+                         content_ui="tabs"/>
+            <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED"
+                         visible="false" weight="0.44444445" sideWeight="0.5" order="2" side_tool="false"
+                         content_ui="tabs"/>
+            <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED"
+                         type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false"
+                         content_ui="tabs"/>
+            <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED"
+                         visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs"/>
+            <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED"
+                         type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false"
+                         content_ui="tabs"/>
+            <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED"
+                         type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false"
+                         content_ui="tabs"/>
+            <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED"
+                         visible="false" weight="0.32914045" sideWeight="0.5" order="1" side_tool="false"
+                         content_ui="tabs"/>
+            <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING"
+                         type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false"
+                         content_ui="tabs"/>
+            <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED"
+                         type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false"
+                         content_ui="combo"/>
+            <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED"
+                         type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false"
+                         content_ui="tabs"/>
+        </layout>
+    </component>
+    <component name="VcsContentAnnotationSettings">
+        <option name="myLimit" value="2678400000"/>
+    </component>
+    <component name="VcsManagerConfiguration">
+        <option name="myTodoPanelSettings">
+            <TodoPanelSettings/>
+        </option>
+    </component>
+    <component name="XDebuggerManager">
+        <breakpoint-manager>
+            <breakpoints>
+                <line-breakpoint enabled="true" type="python-line">
+                    <url>file://$PROJECT_DIR$/main_controller.py</url>
+                    <line>14</line>
+                    <option name="timeStamp" value="8"/>
+                </line-breakpoint>
+                <line-breakpoint enabled="true" type="python-line">
+                    <url>file://$PROJECT_DIR$/datamodel.py</url>
+                    <line>17</line>
+                    <option name="timeStamp" value="16"/>
+                </line-breakpoint>
+                <line-breakpoint enabled="true" type="python-line">
+                    <url>file://$PROJECT_DIR$/datamodel.py</url>
+                    <line>13</line>
+                    <option name="timeStamp" value="17"/>
+                </line-breakpoint>
+            </breakpoints>
+            <option name="time" value="23"/>
+        </breakpoint-manager>
+    </component>
+    <component name="editorHistoryManager">
         <entry file="file://$PROJECT_DIR$/task.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0" vertical-offset="248" max-vertical-offset="1173">
-              <folding />
-            </state>
-          </provider>
+            <provider selected="true" editor-type-id="text-editor">
+                <state line="21" column="65" selection-start="570" selection-end="570" vertical-scroll-proportion="0.0"
+                       vertical-offset="0" max-vertical-offset="1150">
+                    <folding/>
+                </state>
+            </provider>
         </entry>
-      </file>
-      <file leaf-file-name="pairs_trading_algorithm.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pairs_trading_algorithm.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="23" selection-start="357" selection-end="357" vertical-scroll-proportion="0.14770459" vertical-offset="363" max-vertical-offset="2116">
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pairs_trading_code(ver_python).py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pairs_trading_code(ver_python).py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2116">
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="html_parser.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html_parser.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="43" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0" vertical-offset="63" max-vertical-offset="713">
-              <folding />
-            </state>
-          </provider>
+            <provider selected="true" editor-type-id="text-editor">
+                <state line="22" column="4" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0"
+                       vertical-offset="506" max-vertical-offset="690">
+                    <folding/>
+                </state>
+            </provider>
         </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FindManager">
-    <FindUsagesManager>
-      <setting name="OPEN_NEW_TAB" value="false" />
-    </FindUsagesManager>
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="changedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/singleton.py" />
-        <option value="$PROJECT_DIR$/html_parser.py" />
-        <option value="$PROJECT_DIR$/main_controller.py" />
-        <option value="$PROJECT_DIR$/task.py" />
-        <option value="$PROJECT_DIR$/datamodel.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="width" value="1922" />
-    <option name="height" value="1080" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="2" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
-  </component>
-  <component name="ProjectReloadState">
-    <option name="STATE" value="0" />
-  </component>
-  <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dynamic-stock-trade-system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dynamic-stock-trade-system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dynamic-stock-trade-system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
-    <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-  </component>
-  <component name="PyConsoleOptionsProvider">
-    <option name="myPythonConsoleState">
-      <console-settings />
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.main_controller">
-    <configuration default="false" name="task" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="dynamic-stock-trade-system" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/task.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="main_controller" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="dynamic-stock-trade-system" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main_controller.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="html_parser" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="dynamic-stock-trade-system" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/html_parser.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="py.test">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="dynamic-stock-trade-system" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="testToRun" value="" />
-      <option name="keywords" value="" />
-      <option name="params" value="" />
-      <option name="USE_PARAM" value="false" />
-      <option name="USE_KEYWORD" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Nosetests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="dynamic-stock-trade-system" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="dynamic-stock-trade-system" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="dynamic-stock-trade-system" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="dynamic-stock-trade-system" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Attests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="dynamic-stock-trade-system" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Python.task" />
-      <item index="1" class="java.lang.String" itemvalue="Python.main_controller" />
-      <item index="2" class="java.lang.String" itemvalue="Python.html_parser" />
-    </list>
-    <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.main_controller" />
-        <item index="1" class="java.lang.String" itemvalue="Python.task" />
-        <item index="2" class="java.lang.String" itemvalue="Python.html_parser" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="true" SSL_PROTOCOLS="all">
-    <option name="USER" value="" />
-    <option name="PASSWORD" value="" />
-    <option name="mySSHConnectionTimeout" value="30000" />
-    <option name="mySSHReadTimeout" value="30000" />
-    <option name="LAST_MERGED_REVISION" />
-    <option name="MERGE_DRY_RUN" value="false" />
-    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
-    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
-    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
-    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
-    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <option name="FORCE_UPDATE" value="false" />
-    <option name="IGNORE_EXTERNALS" value="false" />
-    <configuration useDefault="false">$USER_HOME$/.subversion</configuration>
-    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
-    <supportedVersion>125</supportedVersion>
-  </component>
-  <component name="SvnFileUrlMappingImpl">
-    <option name="myMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="$PROJECT_DIR$" />
-          <option name="myCopyRoot" value="$PROJECT_DIR$" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
-    <option name="myMoreRealMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="$PROJECT_DIR$" />
-          <option name="myCopyRoot" value="$PROJECT_DIR$" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
-  </component>
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="42d490e3-759c-4b29-9b39-cbac3f2ad7bf" name="Default" comment="" />
-      <created>1389590531734</created>
-      <updated>1389590531734</updated>
-    </task>
-    <servers />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1922" height="1080" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14635417" sideWeight="0.5555556" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28825995" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44444445" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-    </layout>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="myTodoPanelSettings">
-      <TodoPanelSettings />
-    </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/main_controller.py</url>
-          <line>14</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/datamodel.py</url>
-          <line>17</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/datamodel.py</url>
-          <line>13</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="23" />
-    </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/task.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="65" selection-start="570" selection-end="570" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1150">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html_parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="4" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0" vertical-offset="506" max-vertical-offset="690">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0" vertical-offset="23" max-vertical-offset="621">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="23" selection-start="781" selection-end="781" vertical-scroll-proportion="0.0" vertical-offset="736" max-vertical-offset="1127">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0" vertical-offset="79" max-vertical-offset="621">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0" vertical-offset="31" max-vertical-offset="1127">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python2.7/Queue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="0" selection-start="2571" selection-end="2571" vertical-scroll-proportion="0.33272058" vertical-offset="1360" max-vertical-offset="5750" />
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python2.7/threading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="807" column="0" selection-start="28930" selection-end="28930" vertical-scroll-proportion="0.3323077" vertical-offset="18345" max-vertical-offset="30705" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html_parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="43" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0" vertical-offset="63" max-vertical-offset="713">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datamodel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="34" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0" vertical-offset="83" max-vertical-offset="874">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pairs_trading_code(ver_python).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2116">
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="552">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RawData.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="19" selection-start="391" selection-end="391" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5842">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/singleton.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0" vertical-offset="248" max-vertical-offset="1173">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pairs_trading_algorithm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="23" selection-start="357" selection-end="357" vertical-scroll-proportion="0.14770459" vertical-offset="363" max-vertical-offset="2116">
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
+        <entry file="file://$PROJECT_DIR$/main_controller.py">
+            <provider selected="true" editor-type-id="text-editor">
+                <state line="20" column="0" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0"
+                       vertical-offset="23" max-vertical-offset="621">
+                    <folding/>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/task.py">
+            <provider selected="true" editor-type-id="text-editor">
+                <state line="32" column="23" selection-start="781" selection-end="781" vertical-scroll-proportion="0.0"
+                       vertical-offset="736" max-vertical-offset="1127">
+                    <folding/>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/main_controller.py">
+            <provider selected="true" editor-type-id="text-editor">
+                <state line="18" column="0" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0"
+                       vertical-offset="79" max-vertical-offset="621">
+                    <folding/>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/task.py">
+            <provider selected="true" editor-type-id="text-editor">
+                <state line="18" column="13" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0"
+                       vertical-offset="31" max-vertical-offset="1127">
+                    <folding/>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file:///usr/lib/python2.7/Queue.py">
+            <provider selected="true" editor-type-id="text-editor">
+                <state line="67" column="0" selection-start="2571" selection-end="2571"
+                       vertical-scroll-proportion="0.33272058" vertical-offset="1360" max-vertical-offset="5750"/>
+            </provider>
+        </entry>
+        <entry file="file:///usr/lib/python2.7/threading.py">
+            <provider selected="true" editor-type-id="text-editor">
+                <state line="807" column="0" selection-start="28930" selection-end="28930"
+                       vertical-scroll-proportion="0.3323077" vertical-offset="18345" max-vertical-offset="30705"/>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/html_parser.py">
+            <provider selected="true" editor-type-id="text-editor">
+                <state line="11" column="43" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0"
+                       vertical-offset="63" max-vertical-offset="713">
+                    <folding/>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/datamodel.py">
+            <provider selected="true" editor-type-id="text-editor">
+                <state line="20" column="34" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0"
+                       vertical-offset="83" max-vertical-offset="874">
+                    <folding/>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/pairs_trading_code(ver_python).py">
+            <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0"
+                       vertical-offset="0" max-vertical-offset="2116">
+                    <folding>
+                        <element signature="e#0#9#0" expanded="true"/>
+                    </folding>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/main_controller.py">
+            <provider selected="true" editor-type-id="text-editor">
+                <state line="14" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0"
+                       vertical-offset="0" max-vertical-offset="552">
+                    <folding/>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/RawData.csv">
+            <provider selected="true" editor-type-id="text-editor">
+                <state line="8" column="19" selection-start="391" selection-end="391" vertical-scroll-proportion="0.0"
+                       vertical-offset="0" max-vertical-offset="5842">
+                    <folding/>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/singleton.py">
+            <provider selected="true" editor-type-id="text-editor">
+                <state line="9" column="0" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0"
+                       vertical-offset="0" max-vertical-offset="391">
+                    <folding/>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/task.py">
+            <provider selected="true" editor-type-id="text-editor">
+                <state line="26" column="0" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0"
+                       vertical-offset="248" max-vertical-offset="1173">
+                    <folding/>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/pairs_trading_algorithm.py">
+            <provider selected="true" editor-type-id="text-editor">
+                <state line="19" column="23" selection-start="357" selection-end="357"
+                       vertical-scroll-proportion="0.14770459" vertical-offset="363" max-vertical-offset="2116">
+                    <folding>
+                        <element signature="e#0#9#0" expanded="true"/>
+                    </folding>
+                </state>
+            </provider>
+        </entry>
+    </component>
 </project>
 

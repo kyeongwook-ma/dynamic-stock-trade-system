@@ -1,6 +1,5 @@
 #__author__ = 'zetyx'
 
-
 class Singleton(type):
     _instances = {}
 

@@ -7,7 +7,7 @@ import statsmodels.tsa.stattools as ts
 from stock_list import *
 
 # 초기 설정
-os.chdir('C:/Users/Haneul/Desktop/Project/Betrades/anni')
+os.chdir('./anni')
 l = locals()
 
 combined_list = list(map(lambda x : x + '.csv', stock_list))

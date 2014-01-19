@@ -22,18 +22,9 @@ stock_list = [
     '036460', '088350', '010130', '090430',
     '001800', '036570', '009150', '078930'
     ]
-append_csv = ['.csv']
 l = locals()
 
-
-class Mylist(list):
-    def __mul__(self,other):
-        return [[s,o] for s in self for o in other]
-
-
-stock_list = Mylist(stock_list)
-append_csv = Mylist(append_csv)
-combined_list = stock_list * append_csv
+combined_list = list(map(lambda x : x + '.csv', stocklist))
 
 for i in range(len(combined_list)):
     combined_list[i] = ''.join(combined_list[i])

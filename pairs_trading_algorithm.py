@@ -6,7 +6,6 @@ import numpy as np
 import statsmodels.tsa.stattools as ts
 from stock_list import *
 
-# 초기 설정
 os.chdir('./anni')
 l = locals()
 
@@ -60,28 +59,19 @@ for i in range(1,len(combined_list)-1):
         residSpread = spread - signalMean
         residSpread.plot()
 
-        openSignalUp = openSignal * (residSpread * 0 + 1)
-        openSignalDown = -openSignal * (residSpread * 0 + 1)
-        openSignalUp.plot()
-        openSignalDown.plot()
-
-        closeSignalUp = closeSignal * (residSpread * 0 + 1)
-        closeSignalDown = -closeSignal * (residSpread * 0 + 1)
-        closeSignalUp.plot()
-        closeSignalDown.plot()
-
-        stopLossSignalup = stopLossSignal * (residSpread * 0 + 1)
-        stopLossSignalDown = -stopLossSignal * (residSpread * 0 + 1)
-        stopLossSignalup.plot()
-        stopLossSignalDown.plot()
+        def plotSig(up,down,sig):
+            up = sig * (residSpread * 0 + 1) 
+            down = -sig * (residSpread * 0 + 1)
+            up.plot()
+            down.plot() 
+        
+        plotSig(openSignalUp, openSignalDown,openSignal)
+        plotSig(closeSignalUp, closeSignalDown, closeSignal)
+        plotSig(stopLossSignalup, stopLossSignalDown, stopLossSignal)
 
 
 # this code will be updated.
 
-
-
-## 안쓰는 자료 
-# 원래 조합이 48C2 = 1128개여야 하는데 아래 알고리즘은 2256개로 불필요한 계산이 들어가 있음
 
 #def permutations(items, n):
 #    if n==0: yield []

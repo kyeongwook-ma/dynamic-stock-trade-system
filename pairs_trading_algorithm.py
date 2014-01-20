@@ -11,9 +11,6 @@ l = locals()
 
 combined_list = list(map(lambda x : x + '.csv', stock_list))
 
-for i in range(len(combined_list)):
-    combined_list[i] = ''.join(combined_list[i])
-
 for i in range(0,len(combined_list)):
         l['s_%d' % i] = pd.read_csv(combined_list[i])
         l['Close_s_%d' %i] = l['s_%d' % i].Close
@@ -21,16 +18,13 @@ for i in range(0,len(combined_list)):
 
 
 def y_cointegration(asset1, asset2):
-    coint_result = np.cov(asset2, asset1)[0][1] / np.var(asset2)
-    return coint_result
+    return np.cov(asset2, asset1)[0][1] / np.var(asset2)
 
 def spread(asset1, asset2):
-    spread = asset1 - coint * asset2
-    return spread
+    return asset1 - coint * asset2
 
 def adfTest(spread):
-    ADF_p_value = ts.adfuller(spread, 1)[1]
-    return ADF_p_value
+    return ts.adfuller(spread, 1)[1]
 
 for i in range(1,len(combined_list)-1):
     for j in range(i+1,len(combined_list)):        

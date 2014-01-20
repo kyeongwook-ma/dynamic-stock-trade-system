@@ -6,7 +6,7 @@ import numpy as np
 import statsmodels.tsa.stattools as ts
 from stock_list import *
 
-os.chdir('./anni')
+os.chdir('../anni')
 l = locals()
 
 combined_list = list(map(lambda x : x + '.csv', stock_list))

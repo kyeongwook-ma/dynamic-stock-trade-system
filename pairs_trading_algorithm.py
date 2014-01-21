@@ -4,48 +4,53 @@ from pandas import Series
 import pandas as pd
 import numpy as np
 import statsmodels.tsa.stattools as ts
+from stock_list import *
+import sys
 
 
-os.chdir('./anni')
+os.chdir('../anni')
 l = locals()
-
-stock_list = [
-    '005930', '005380', '005490', '012330',
-    '000660', '078930', '005935', '015760',
-    '055550', '032830', '051910', '009540',
-    '017670', '105560', '096770', '023530',
-    '086790', '000810', '066570', '003550',
-    '053000', '033780', '000830', '034220',
-    '003600', '010140', '086280', '051900',
-    '010950', '030200', '011170', '161390',
-    '139480', '004020', '006400', '042660',
-    '000720', '024110', '035250', '034730',
-    '036460', '088350', '010130', '090430',
-    '001800', '036570', '009150', 
-    ]
+count = 0
+dissatisfired_adf_test = arange(10)
+combined_list = list(map(lambda x : x + '.csv', filter(lambda x: x != '035420', stock_list)))
 
 
-combined_list = list(map(lambda x : x + '.csv', stock_list))
+# a simple class with a write method
 
+def adf_test(asset):
+    return ts.adfuller(asset, 1)[1] 
 
+# 38번 줄에 출력되는 값들을 리스트에 저장하기 위한 클래스 문 
+class WritableObject:
+    def __init__(self):
+        self.content = []
+    def write(self, string):
+        self.content.append(string)
+
+satisfied_list = WritableObject()       # a writable object
+
+# 우리가 쓰는게 공적분 방법인데 공적분을 쓰려면 시계열이 미리 안정적이면 안됨. 불안정한 것을 공적분해서 안정화 시키는 것이 목적이기 때문.
+# 따라서 미리 안정한(stationary) 주가 목록을 제외하고 우리가 쓸수 있는 주가 목록을 추출하고자 함. 
 for i in range(0,len(combined_list)):
-    l['s_%d' % i] = pd.read_csv(combined_list[i])
+    l['a_%d' % i] = pd.read_csv(combined_list[i])
+    l['Close_a_%d' %i] = l['a_%d' % i].Close
+    if adfTest(l['Close_a_%d' % i]) >= 0.05:
+        print >> satisfied_list, combined_list[i]
+
+satisfied_list = [s for s in satisfied_list.content if len(s) != 1]     #그냥 satisfied_list에는 '\n'이라는 빈 리스트 원소가 생성되서 이를 지우는 작업
+
+for i in range(0,len(satisfied_list)):
+    l['s_%d' % i] = pd.read_csv(satisfied_list[i])
     l['Close_s_%d' %i] = l['s_%d' % i].Close
     l['log_s_%d' %i] = np.log(l['Close_s_%d' % i])
 
-
-
-
+# 아래 공적분 구하는 공식은 약식임. 재대로 구하려면 복잡함에따라 머신러닝이나 시뮬레이션 기법을 활용해야함. 
 def y_cointegration(asset1, asset2):
     return np.cov(asset2, asset1)[0][1] / np.var(asset2)
 
 
-def adfTest(spread):
-    return ts.adfuller(spread, 1)[1] 
-
-
-for i in range(0,len(combined_list)):
-    for j in range(i+1,len(combined_list)+1):        
+for i in range(0,len(satisfied_list)-1):
+    for j in range(i+1,len(satisfied_list)):        
         l['coint_%d' %i] = y_cointegration(l['log_s_%d' %i], l['log_s_%d' %j])
         spread = l['log_s_%d' %i] - l['coint_%d' %i] * l['log_s_%d' %j]
         ADF_p_value = adfTest(spread)

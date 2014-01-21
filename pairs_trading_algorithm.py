@@ -20,14 +20,7 @@ combined_list = list(map(lambda x : x + '.csv', filter(lambda x: x != '035420', 
 def adf_test(asset):
     return ts.adfuller(asset, 1)[1] 
 
-# 38번 줄에 출력되는 값들을 리스트에 저장하기 위한 클래스 문 
-class WritableObject:
-    def __init__(self):
-        self.content = []
-    def write(self, string):
-        self.content.append(string)
-
-satisfied_list = WritableObject()       # a writable object
+satisfied_list = list()
 
 # 우리가 쓰는게 공적분 방법인데 공적분을 쓰려면 시계열이 미리 안정적이면 안됨. 불안정한 것을 공적분해서 안정화 시키는 것이 목적이기 때문.
 # 따라서 미리 안정한(stationary) 주가 목록을 제외하고 우리가 쓸수 있는 주가 목록을 추출하고자 함. 
@@ -36,8 +29,6 @@ for i in range(0,len(combined_list)):
     l['Close_a_%d' %i] = l['a_%d' % i].Close
     if adfTest(l['Close_a_%d' % i]) >= 0.05:
         print >> satisfied_list, combined_list[i]
-
-satisfied_list = [s for s in satisfied_list.content if len(s) != 1]     #그냥 satisfied_list에는 '\n'이라는 빈 리스트 원소가 생성되서 이를 지우는 작업
 
 for i in range(0,len(satisfied_list)):
     l['s_%d' % i] = pd.read_csv(satisfied_list[i])
@@ -68,14 +59,16 @@ for i in range(0,len(satisfied_list)-1):
         closeSignal = signalDev * closeMult;
         stopLossSignal = signalDev * stopLossMult;
         residSpread = spread - signalMean
-        def plotSig(signal,residSpread):
+
+        def plotSig(signal):
             up = signal * (residSpread * 0 + 1) 
             down = -signal * (residSpread * 0 + 1)
             up.plot()
             down.plot() 
             residSpread.plot()
-        plotSig(openSignal, residSpread)
-        plotSig(closeSignal, residSpread)
-        plotSig(stopLossSignal, residSpread)
+            
+        plotSig(openSignal)
+        plotSig(closeSignal)
+        plotSig(stopLossSignal)
 
 

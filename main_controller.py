@@ -8,6 +8,5 @@ class MainController(object):
 
     @staticmethod
     def get_stock_value():
-        get_rt_stocks()
-        RTSDataModel().add_data(TaskController().deque_task(), True)
+        RTSDataModel().get_rt_stocks()
 

@@ -6,6 +6,7 @@ import pandas as pd
 import numpy as np
 import statsmodels.tsa.stattools as ts
 
+
 from stock_list import *
 from base_model import DataModel
 
@@ -30,55 +31,30 @@ def plot_sig(signal, spread):
 
     # examine adf_test and return logged values
 
-
-class Pair(object):
-    """class for store some values"""
-
-    def __init__(self, spread, sig_mean, sig_dev, open_mult, close_mult,
-                 stoploss_mult, open_sig, close_sig, stoploss_sig,
-                 resid_spread, p_value, coint):
-        super(Pair, self).__init__()
-
-        self.spread = spread
-        self.sig_mean = sig_mean
-        self.sig_dev = sig_dev
-        self.open_mult = open_mult
-        self.close_mult = close_mult
-        self.stoploss_mult = stoploss_mult
-        self.open_sig = open_sig
-        self.close_sig = close_sig
-        self.stoploss_sig = stoploss_sig
-        self.resid_spread = resid_spread
-        self.p_value = p_value
-        self.coint = coint
-
-        def __str__(self):
-            pass
-
-
 class PairDataModel(DataModel):
     """ inhert from datamodel for saving pair value """
 
     def __init__(self):
         super(PairDataModel, self).__init__()
 
-    @property
     def create_pair(self):
 
         def check_adf():
-
             except_list = ['035420']
             csv_list = list(map(lambda x: x + '.csv', [a for a in stock_list if not a in except_list]))
             satisfied_list = list()
 
             for idx in range(0, len(csv_list)):
             # get data from csv file
-                origin = pd.read_csv(csv_list[idx]).Close
+                try:
+                    origin = pd.read_csv(csv_list[idx]).Close
+                     # check condition and push into list
+                    if adf_test(origin) >= 0.05:
+                        logged = np.log(origin)
+                        satisfied_list.append(logged)
+                except:
+                    continue
 
-                # check condition and push into list
-                if adf_test(origin) >= 0.05:
-                    logged = np.log(origin)
-                    satisfied_list.append(logged)
             return satisfied_list
 
         # get checked values
@@ -118,7 +94,30 @@ class PairDataModel(DataModel):
                      open_sig=open_sig, close_sig=close_sig,
                      stoploss_sig=stoploss_sig, resid_spread=resid_spread,
                      p_value=p_value, coint=coint)
-            print str(p)
+
+            self.add_data(p)
+
+class Pair(object):
+
+    """class for store some values"""
+    def __init__(self, spread, sig_mean, sig_dev, open_mult, close_mult,
+                 stoploss_mult, open_sig, close_sig, stoploss_sig,
+                 resid_spread, p_value, coint):
+
+        self.spread = spread
+        self.sig_mean = sig_mean
+        self.sig_dev = sig_dev
+        self.open_mult = open_mult
+        self.close_mult = close_mult
+        self.stoploss_mult = stoploss_mult
+        self.open_sig = open_sig
+        self.close_sig = close_sig
+        self.stoploss_sig = stoploss_sig
+        self.resid_spread = resid_spread
+        self.p_value = p_value
+        self.coint = coint
 
 
-PairDataModel().create_pair
+p = PairDataModel()
+p.create_pair()
+p.print_all_model()

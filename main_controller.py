@@ -1,5 +1,4 @@
 from rts_datamodel import RTSDataModel
-from stock_request import *
 
 
 class MainController(object):

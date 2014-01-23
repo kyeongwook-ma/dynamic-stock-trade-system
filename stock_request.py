@@ -1,8 +1,5 @@
-import urllib
 import urllib2
 import os
-
-from bs4 import BeautifulSoup
 
 from task import Task, TaskController
 from stock_list import stock_list
@@ -33,3 +30,5 @@ def get_anni_csv():
     if TaskController().is_task_done():
         return file_list
 
+
+get_anni_csv()

@@ -1,14 +1,16 @@
 import os
+import itertools
 
 from pandas import Series
 import pandas as pd
 import numpy as np
 import statsmodels.tsa.stattools as ts
+
 from stock_list import *
 from base_model import DataModel
 
 
-os.chdir('../anni')
+os.chdir('./anni')
 
 
 def adf_test(asset):
@@ -26,6 +28,8 @@ def plot_sig(signal, spread):
     down.plot()
     spread.plot()
 
+    # examine adf_test and return logged values
+
 
 class Pair(object):
     """class for store some values"""
@@ -35,7 +39,6 @@ class Pair(object):
                  resid_spread, p_value, coint):
         super(Pair, self).__init__()
 
-        self.satisfied_list = list()
         self.spread = spread
         self.sig_mean = sig_mean
         self.sig_dev = sig_dev
@@ -49,6 +52,9 @@ class Pair(object):
         self.p_value = p_value
         self.coint = coint
 
+        def __str__(self):
+            pass
+
 
 class PairDataModel(DataModel):
     """ inhert from datamodel for saving pair value """
@@ -56,16 +62,18 @@ class PairDataModel(DataModel):
     def __init__(self):
         super(PairDataModel, self).__init__()
 
+    @property
     def create_pair(self):
 
-        # examine adf_test and return logged values
         def check_adf():
-            csv_list = list(map(lambda x: x + '.csv', filter(lambda x: x != '035420', stock_list)))
+
+            except_list = ['035420']
+            csv_list = list(map(lambda x: x + '.csv', [a for a in stock_list if not a in except_list]))
             satisfied_list = list()
 
-            for i in range(0, len(csv_list)):
-                # get data from csv file
-                origin = pd.read_csv(csv_list[i]).Close
+            for idx in range(0, len(csv_list)):
+            # get data from csv file
+                origin = pd.read_csv(csv_list[idx]).Close
 
                 # check condition and push into list
                 if adf_test(origin) >= 0.05:
@@ -73,42 +81,44 @@ class PairDataModel(DataModel):
                     satisfied_list.append(logged)
             return satisfied_list
 
-            # get checked values
-            pair_list = check_adf()
+        # get checked values
+        pair_list = check_adf()
 
-            # this loop looks like to be refactored
-            for i in range(0, len(pair_list) - 1):
-                for j in range(i + 1, len(pair_list)):
+        for pair in itertools.combinations(pair_list, 2):
+            # get a coint value from two list contents
+            try:
+                coint = get_cointegration(pair[0], pair[1])
+            except:
+                continue
 
-                    # get a coint value from two list contents
-                    coint = get_cointegration(pair_list[i], pair_list[j])
+                ## do some math ...
+            spread = pair[0] - coint * pair[1]
+            p_value = adf_test(spread)
 
-                    ## do some math ...
-                    spread = pair_list[i] - coint * pair_list[j]
-                    p_value = adf_test(spread)
+            if p_value <= 0.05:
+                pass #print "The spread is likely mean-reverting , p-value of ADF Test is ", p_value
+            else:
+                pass #print "The spread is not mean-reverting , p-value of ADF Test is ", p_value
 
-                    if p_value <= 0.05:
-                        print "The spread is likely mean-reverting , p-value of ADF Test is ", p_value
-                    else:
-                        print "The spread is not mean-reverting , p-value of ADF Test is ", p_value
+            spread = Series(spread)
+            sig_mean = spread.mean()
+            sig_dev = spread.std()
+            open_mult = 1.0
+            close_mult = 0.5
+            stoploss_mult = 4.0
+            open_sig = sig_dev * open_mult
+            close_sig = sig_dev * close_mult
+            stoploss_sig = sig_dev * stoploss_mult
+            resid_spread = spread - sig_mean
 
-                    spread = Series(spread)
-                    sig_mean = spread.mean()
-                    sig_dev = spread.std()
-                    open_mult = 1.0
-                    close_mult = 0.5
-                    stoploss_mult = 4.0
-                    open_sig = sig_dev * open_mult
-                    close_sig = sig_dev * close_mult
-                    stoploss_sig = sig_dev * stoploss_mult
-                    resid_spread = spread - sig_mean
-
-                    # push into pair data model
-                    self.add_data(Pair(spread=spread, sig_mean=sig_mean,
-                                       sig_dev=sig_dev, open_mult=open_mult,
-                                       close_mult=close_mult, stoploss_mult=stoploss_mult,
-                                       open_sig=open_sig, close_sig=close_sig,
-                                       stoploss_sig=stoploss_sig, resid_spread=resid_spread,
-                                       p_value=p_value, coint=coint))
+            # push into pair data model
+            p = Pair(spread=spread, sig_mean=sig_mean,
+                     sig_dev=sig_dev, open_mult=open_mult,
+                     close_mult=close_mult, stoploss_mult=stoploss_mult,
+                     open_sig=open_sig, close_sig=close_sig,
+                     stoploss_sig=stoploss_sig, resid_spread=resid_spread,
+                     p_value=p_value, coint=coint)
+            print str(p)
 
 
+PairDataModel().create_pair

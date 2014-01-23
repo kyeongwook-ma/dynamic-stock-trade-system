@@ -1,0 +1,32 @@
+from singleton import Singleton
+
+
+class PairDataModel(object):
+    __metaclass__ = Singleton
+
+    def __init__(self):
+        super(PairDataModel, self).__init__()
+        self.pair_list = []
+
+    def add_data(self, data, is_multiple=False, idx=0):
+        
+        if is_multiple is True:
+            self.pair_list.extend(data)
+        else:
+            self.pair_list.append(data)
+        if idx != 0:
+           self.pair_list.index(data, idx)
+
+    def get_list_size(self):
+        return len(self.pair_list)
+
+    def del_data(self, idx):
+        self.pair_list.pop(idx)
+
+    def del_data(self, stock):
+        self.pair_list.remove(stock)
+
+    def print_all_model(self):
+        print self.self.pair_list
+
+

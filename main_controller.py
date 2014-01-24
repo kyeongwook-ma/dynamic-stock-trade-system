@@ -1,4 +1,4 @@
-from datamodel import StockDataModel
+from rts_datamodel import RTSDataModel
 from stock_request import *
 
 
@@ -9,5 +9,5 @@ class MainController(object):
     @staticmethod
     def get_stock_value():
         get_rt_stocks()
-        StockDataModel().add_data(TaskController().deque_task(), True)
+        RTSDataModel().add_data(TaskController().deque_task(), True)
 

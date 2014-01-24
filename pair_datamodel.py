@@ -6,7 +6,6 @@ import pandas as pd
 import numpy as np
 import statsmodels.tsa.stattools as ts
 
-
 from stock_list import *
 from base_model import DataModel
 
@@ -31,6 +30,7 @@ def plot_sig(signal, spread):
 
     # examine adf_test and return logged values
 
+
 class PairDataModel(DataModel):
     """ inhert from datamodel for saving pair value """
 
@@ -48,7 +48,7 @@ class PairDataModel(DataModel):
             # get data from csv file
                 try:
                     origin = pd.read_csv(csv_list[idx]).Close
-                     # check condition and push into list
+                    # check condition and push into list
                     if adf_test(origin) >= 0.05:
                         logged = np.log(origin)
                         satisfied_list.append(logged)
@@ -97,13 +97,13 @@ class PairDataModel(DataModel):
 
             self.add_data(p)
 
-class Pair(object):
 
+class Pair(object):
     """class for store some values"""
+
     def __init__(self, spread, sig_mean, sig_dev, open_mult, close_mult,
                  stoploss_mult, open_sig, close_sig, stoploss_sig,
                  resid_spread, p_value, coint):
-
         self.spread = spread
         self.sig_mean = sig_mean
         self.sig_dev = sig_dev
@@ -116,6 +116,16 @@ class Pair(object):
         self.resid_spread = resid_spread
         self.p_value = p_value
         self.coint = coint
+
+    def __str__(self):
+        return \
+            'coint : ' + str(self.coint) + \
+            '\n p_value : ' + str(self.p_value) + \
+            '\n resid_spread ' + str(self.resid_spread) + \
+            '\n sig_mean : ' + str(self.sig_mean) + \
+            '\n sig_dev : ' + str(self.sig_dev) + \
+            '\n open_mult : ' + str(self.open_mult) + \
+            '\n close_mult : ' + str(self.close_mult)
 
 
 p = PairDataModel()

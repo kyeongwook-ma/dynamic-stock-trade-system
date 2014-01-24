@@ -28,7 +28,7 @@ class DataModel(object):
         self.data_list.remove(stock)
 
     def print_all_model(self):
-        print self.data_list
-
+        for data in self.data_list:
+            print data
 
 
